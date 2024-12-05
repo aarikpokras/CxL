@@ -4,6 +4,11 @@
 void print(std::string s);
 void printi(int i);
 
+struct dfun {
+  int c;
+  dfun(int w) : c(w) {}
+}
+
 template <typename T>
 struct num {
   T c;
