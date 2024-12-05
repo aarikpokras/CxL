@@ -1,2 +1,3 @@
 - [x] Add delim to join function
-- [x] Have compiler turn include directives back into use
+- [ ] Have compiler turn include directives back into use
+- [ ] Install script
