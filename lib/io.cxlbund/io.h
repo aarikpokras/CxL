@@ -4,7 +4,7 @@
 void print(std::string s);
 void printi(int i);
 
-struct dfun {
+struct fun {
   int c;
   dfun(int w) : c(w) {}
 }
