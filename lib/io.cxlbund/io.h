@@ -16,4 +16,11 @@ struct num {
 struct strarr {
   std::vector<std::string> c;
   strarr(std::vector<std::string> w) : c(w) {}
+  std::string join() {
+    std::string rets;
+    for (int i = 0; i < c.size(); i++) {
+      rets += c[i];
+    }
+    return rets;
+  }
 };
