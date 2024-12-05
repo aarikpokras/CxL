@@ -15,7 +15,7 @@ for i in str_w:
   if (i.startswith("use")):
     module = i.replace("use@", "").replace("*!", "")
     f_module = module.replace("\n", "")
-    tp_file.append(i.replace("use@", "#include \"" + f_module + ".cxlbund/").replace("*!", "\""))
+    tp_file.append(i.replace(f_module, "").replace("use@", "#include \"" + f_module + ".cxlbund/" + f_module + ".h").replace("*!", "\""))
   else:
     code.append(i)
 
@@ -46,4 +46,4 @@ compre += argv[1] + " -o program"
 
 print(compre)
 
-#os.system(compre + " -std=c++17")
+os.system(compre + " -std=c++17")
