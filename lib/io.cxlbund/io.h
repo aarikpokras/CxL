@@ -6,7 +6,7 @@ void printi(int i);
 
 struct fun {
   int c;
-  dfun(int w) : c(w) {}
+  fun(int w) : c(w) {}
 }
 
 template <typename T>
