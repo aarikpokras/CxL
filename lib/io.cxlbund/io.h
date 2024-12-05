@@ -16,11 +16,12 @@ struct num {
 struct strarr {
   std::vector<std::string> c;
   strarr(std::vector<std::string> w) : c(w) {}
-  std::string join() {
+  std::string join(std::string delim) {
     std::string rets;
     for (int i = 0; i < c.size(); i++) {
       rets += c[i];
+      rets += delim;
     }
-    return rets;
+    return rets.erase(rets.size()-1, rets.size());
   }
 };
