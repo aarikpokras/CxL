@@ -1,9 +1,12 @@
+#!/usr/bin/env python3
 import subprocess as s
 import os
 import sys
 import re
 
 argv = sys.argv
+
+filename = re.sub("\\..*", "", argv[1])
 
 code = []
 tp_file = []
@@ -42,7 +45,7 @@ for i in whatf:
   os.system("cp -r lib/" + i + ".cxlbund .")
   compre += i + ".cxlbund/" + i + ".cpp "
 
-compre += argv[1] + " -o program"
+compre += argv[1] + " -o " + filename
 
 print(compre)
 
