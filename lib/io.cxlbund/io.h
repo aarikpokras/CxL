@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#define fun int
 #pragma once
 void print(std::string s);
 void printi(int i);
