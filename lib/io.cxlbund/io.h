@@ -1,6 +1,7 @@
 #include <iostream>
 #pragma once
 void print(std::string s);
+void printi(int i);
 
 template <typename T>
 struct num {
