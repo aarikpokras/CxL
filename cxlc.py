@@ -58,6 +58,7 @@ change back
 includes = []
 includes_rep = []
 code_w = []
+incs_raw = []
 
 with open(argv[1], 'r') as f:
   w_ph = f.readlines()
@@ -66,6 +67,7 @@ with open(argv[1], 'r') as f:
       inc_ = i.replace("#include \"", "").replace("\"", "")
       inc = re.sub(".cxlbund.*", "", inc_)
       includes.append("use@" + inc)
+      incs_raw.append(inc.strip())
     else:
       code_w.append(i)
 
@@ -74,3 +76,10 @@ with open(argv[1], 'w') as f:
     f.write(i)
   for i in code_w:
     f.write(i)
+
+"""
+destroy local cxlbunds
+"""
+
+for i in incs_raw:
+  os.system("rm -r " + i + ".cxlbund")
