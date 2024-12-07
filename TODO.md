@@ -1,3 +1,4 @@
 - [x] Add delim to join function
 - [x] Have compiler turn include directives back into use
+- [ ] Unify printing with `cout`
 - [ ] Install/prep script
