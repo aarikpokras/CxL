@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstring>
 #include <vector>
 #define fun int
 #define exitwith return
@@ -33,8 +34,31 @@ struct str {
   str(const char* w) {
     c.push_back(w);
   }
+  str(std::string w) {  // Not for user -- this is for
+    c.push_back(w);     // operator overloading, which
+                        // passes elements of the vector as
+                        // std::strings.
+  }
   int size() {
     return c[0].size();
+  }
+  str operator+(const str& o) {
+    std::vector<std::string> ret;
+
+    ret.push_back("");
+    ret.push_back("");
+
+    ret[0] = c[0].c_str();
+    ret[1] = o.c[0].c_str();
+    std::string ret_f = ret[0] + ret[1]; // Take advantage of std::string's concat.
+    return str(ret_f);  // This uses the std::string constructor
+  }
+  bool operator==(const str& o) {
+    if (c[0] == o.c[0]) {
+      return true;
+    } else {
+      return false;
+    }
   }
 };
 
