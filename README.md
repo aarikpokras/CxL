@@ -1,4 +1,7 @@
-# CxL
+<div align="center">
+
+  # <img src="https://raw.githubusercontent.com/aarikpokras/CxL/refs/heads/master/images/cxl_hero.png" alt="CxL" width="300" />
+</div>
 C++ Extended Language
 
 CxL is currently under (a lot of) development and isn't exactly very viable right now. Please bear with me.
