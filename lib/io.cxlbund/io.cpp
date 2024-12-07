@@ -9,3 +9,12 @@ void print(string s) {
 void printi(int i) {
   printf("%d", i);
 }
+
+void prints(str s) {
+  cout << s.c[0];
+}
+
+str chomp(str what) {
+  what.c[0].erase(what.c[0].size()-1, what.c[0].size());
+  return what;
+}
