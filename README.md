@@ -1,6 +1,6 @@
 <div align="center">
 
-  # <img src="https://raw.githubusercontent.com/aarikpokras/CxL/refs/heads/master/images/cxl_hero.png" alt="CxL" width="300" />
+  # <img src="https://raw.githubusercontent.com/aarikpokras/CxL/refs/heads/master/images/cxl_hero_wide.png" alt="CxL" width="400" />
 </div>
 C++ Extended Language
 
