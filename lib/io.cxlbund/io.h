@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #define fun int
+#define exitwith return
 #pragma once
 void print(std::string s);
 void printi(int i);
@@ -26,3 +27,16 @@ struct strarr {
     return rets.erase(rets.size()-1, rets.size());
   }
 };
+
+struct str {
+  std::vector<std::string> c;
+  str(const char* w) {
+    c.push_back(w);
+  }
+  int size() {
+    return c[0].size();
+  }
+};
+
+void prints(str s);
+str chomp(str what);
