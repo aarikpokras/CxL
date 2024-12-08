@@ -3,5 +3,6 @@
 - [x] Comparison operator overloading for `str` and `num`
 - [ ] Length function for `num`
   - [ ] Update docs
+- [ ] Value comparison operators (`>` and `<`) for `num`
 - [ ] Unify printing with `cout`
 - [ ] Install/prep script
