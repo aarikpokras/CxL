@@ -5,11 +5,11 @@
 #define exitwith return
 #pragma once
 void print(std::string s);
-void printi(int i);
 
+template <typename T>
 struct num {
-  float c;
-  num(float w) : c(w) {}
+  T c;
+  num(T w) : c(w) {}
   std::string as_str() {
     return std::to_string(c);
   }
@@ -24,6 +24,11 @@ struct num {
     }
   }
 };
+
+template <typename T>
+void printi(num<T> i) {
+  std::cout << i.c;
+}
 
 struct strarr {
   std::vector<std::string> c;
