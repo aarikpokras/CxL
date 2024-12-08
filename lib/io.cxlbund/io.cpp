@@ -6,10 +6,6 @@ void print(string s) {
   printf("%s", s.c_str());
 }
 
-void printi(int i) {
-  printf("%d", i);
-}
-
 void prints(str s) {
   cout << s.c[0];
 }
