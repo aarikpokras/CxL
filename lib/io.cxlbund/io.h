@@ -32,6 +32,20 @@ struct num {
   void operator-=(const num& o) {
     c -= o.c;
   }
+  bool operator>(const num& o) {
+    if (c > o.c) {
+      return true; 
+    } else {
+      return false;
+    }
+  }
+  bool operator<(const num& o) {
+    if (c < o.c) { 
+      return true;
+    } else {
+      return false;
+    }
+  }
 };
 
 template <typename T>
