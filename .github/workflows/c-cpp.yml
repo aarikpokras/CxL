@@ -1,0 +1,21 @@
+name: cxlc Testing
+
+on:
+  push:
+    branches: [ "master" ]
+    paths:
+      - "src/**"
+      - ".github/**"
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Test fs module
+      run: |
+        python3 cxlc.py examples/readfile.cxl
