@@ -16,12 +16,21 @@ struct num {
   num operator+(const num& o) {
     return c + o.c;
   }
+  num operator-(const num& o) {
+    return c - o.c;
+  }
   bool operator==(const num& o) {
     if (c == o.c) {
       return true;
     } else {
       return false;
     }
+  }
+  void operator+=(const num& o) {
+    c += o.c;
+  }
+  void operator-=(const num& o) {
+    c -= o.c;
   }
 };
 
@@ -66,6 +75,9 @@ struct str {
     ret[1] = o.c[0].c_str();
     std::string ret_f = ret[0] + ret[1]; // Take advantage of std::string's concat.
     return str(ret_f);  // This uses the std::string constructor
+  }
+  void operator+=(const str& o) {
+    c[0] += o.c[0];
   }
   bool operator==(const str& o) {
     if (c[0] == o.c[0]) {
