@@ -1,5 +1,7 @@
 - [x] Add delim to join function
 - [x] Have compiler turn include directives back into use
+- [x] Comparison operator overloading for `str` and `num`
+- [ ] Length function for `num`
+  - [ ] Update docs
 - [ ] Unify printing with `cout`
-- [ ] Comparison operator overloading for `str` and `num`
 - [ ] Install/prep script
