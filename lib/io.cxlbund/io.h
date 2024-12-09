@@ -50,6 +50,13 @@ struct num {
       return false;
     }
   }
+  bool operator!=(const num& o) {
+    if (c != o.c) {
+      return true;
+    } else {
+      return false;
+    }
+  }
   bool operator>(const num& o) {
     if (c > o.c) {
       return true; 
