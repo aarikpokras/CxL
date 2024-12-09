@@ -6,5 +6,6 @@
   - [x] Update docs
 - [ ] Length function for `num`
   - [ ] Update docs
+- [ ] ARGV array
 - [ ] Unify printing with `cout`
 - [ ] Install/prep script
