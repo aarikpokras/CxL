@@ -132,6 +132,13 @@ struct str {
   void operator+=(const str& o) {
     c[0] += o.c[0];
   }
+  bool operator!=(const str& o) {
+    if (c[0] != o.c[0]) {
+      return true;
+    } else {
+      return false;
+    }
+  }
   bool operator==(const str& o) {
     if (c[0] == o.c[0]) {
       return true;
