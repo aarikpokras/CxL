@@ -1,8 +1,8 @@
 use@io  // import the default module
 use@fs  // import the module for file interaction
 
-fun main() {
+start
   strarr fileContents({read_file("example.txt")});  // Save the contents of file "example.txt" to a string array called `fileContents`
   print(c.join(" "));  // Convert the string array into a string and print it
   exitwith 0;  // Exit back to the shell with code 0 (successful)
-}
+end
