@@ -19,18 +19,36 @@ struct num {
   num operator-(const num& o) {
     return c - o.c;
   }
-  bool operator==(const num& o) {
-    if (c == o.c) {
-      return true;
-    } else {
-      return false;
-    }
+  num operator*(const num& o) {
+    return c * o.c;
+  }
+  num operator/(const num& o) {
+    return c / o.c;
   }
   void operator+=(const num& o) {
     c += o.c;
   }
   void operator-=(const num& o) {
     c -= o.c;
+  }
+  void operator*=(const num& o) {
+    c *= o.c;
+  }
+  void operator/=(const num& o) {
+    c /= o.c;
+  }
+  void operator++() {
+    c++;
+  }
+  void operator--() {
+    c--;
+  }
+  bool operator==(const num& o) {
+    if (c == o.c) {
+      return true;
+    } else {
+      return false;
+    }
   }
   bool operator>(const num& o) {
     if (c > o.c) {
@@ -41,6 +59,20 @@ struct num {
   }
   bool operator<(const num& o) {
     if (c < o.c) { 
+      return true;
+    } else {
+      return false;
+    }
+  }
+  bool operator>=(const num& o) {
+    if (c >= o.c) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+  bool operator<=(const num& o) {
+    if (c <= o.c) {
       return true;
     } else {
       return false;
