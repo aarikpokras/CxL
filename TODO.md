@@ -4,6 +4,7 @@
 - [x] Value comparison operators (`>` and `<`) for `num`
 - [x] NET operator `!=` for `str`s
   - [x] Update docs
+- [ ] Prefix, not postfix incrementation
 - [ ] Length function for `num`
   - [ ] Update docs
 - [ ] ARGV array
