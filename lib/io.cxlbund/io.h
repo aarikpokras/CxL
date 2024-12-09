@@ -1,7 +1,8 @@
 #include <iostream>
 #include <cstring>
 #include <vector>
-#define fun int
+#define start int main() {
+#define end }
 #define exitwith return
 #pragma once
 void print(std::string s);
