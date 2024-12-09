@@ -2,8 +2,8 @@
 - [x] Have compiler turn include directives back into use
 - [x] Comparison operator overloading for `str` and `num`
 - [x] Value comparison operators (`>` and `<`) for `num`
-- [ ] NET operator `!=` for `str`s
-  - [ ] Update docs
+- [x] NET operator `!=` for `str`s
+  - [x] Update docs
 - [ ] Length function for `num`
   - [ ] Update docs
 - [ ] Unify printing with `cout`
