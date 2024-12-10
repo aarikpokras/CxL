@@ -5,11 +5,10 @@
 - [x] NET operator `!=` for `str`s
   - [x] Update docs
 ---
-# `char` literals to str when concat. before!
+# left-side op. for everything!!
 ---
-- [ ] Prefix, not postfix incrementation
-- [ ] Length function for `num`
-  - [ ] Update docs
+- [x] Prefix, not postfix incrementation
+  - [x] Update docs
 - [ ] ARGV array
 - [ ] Unify printing with `cout`
 - [ ] Install/prep script
