@@ -4,9 +4,7 @@
 - [x] Value comparison operators (`>` and `<`) for `num`
 - [x] NET operator `!=` for `str`s
   - [x] Update docs
----
-## [-] left-side op. for everything!!
----
+- [x] Right-side operator support for everything
 - [x] Prefix, not postfix incrementation
   - [x] Update docs
 - [ ] ARGV array
