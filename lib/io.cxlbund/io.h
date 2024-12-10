@@ -38,10 +38,10 @@ struct num {
   void operator/=(const num& o) {
     c /= o.c;
   }
-  void operator++() {
+  void operator++(int) {
     c++;
   }
-  void operator--() {
+  void operator--(int) {
     c--;
   }
   bool operator==(const num& o) {
@@ -119,14 +119,14 @@ struct str {
   int size() {
     return c[0].size();
   }
-  str operator+(const str& o) {
+  friend str operator+(const str& l, const str& r) {
     std::vector<std::string> ret;
-
+    
     ret.push_back("");
     ret.push_back("");
-
-    ret[0] = c[0].c_str();
-    ret[1] = o.c[0].c_str();
+    
+    ret[0] = l.c[0].c_str();  
+    ret[1] = r.c[0].c_str();
     std::string ret_f = ret[0] + ret[1]; // Take advantage of std::string's concat.
     return str(ret_f);  // This uses the std::string constructor
   }
@@ -151,3 +151,4 @@ struct str {
 
 void prints(str s);
 str chomp(str what);
+str read();
