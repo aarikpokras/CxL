@@ -11,5 +11,4 @@
 - [x] Subscript operator for `strarr`
 - [x] `write_file` function
 - [x] Tutorials in docs!
-- [ ] Unify printing with `cout`
 - [ ] Install/prep script
