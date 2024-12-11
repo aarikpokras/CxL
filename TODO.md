@@ -7,7 +7,8 @@
 - [x] Right-side operator support for everything
 - [x] Prefix, not postfix incrementation
   - [x] Update docs
+- [x] ARGV array
+- [ ] `write_file` function
 - [ ] Tutorials in docs!
-- [ ] ARGV array
 - [ ] Unify printing with `cout`
 - [ ] Install/prep script
