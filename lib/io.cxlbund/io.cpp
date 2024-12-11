@@ -2,6 +2,12 @@
 #include "io.h"
 using namespace std;
 
+str read() {
+  string out_;
+  getline(cin, out_);
+  return str(out_);
+}
+
 void print(string s) {
   printf("%s", s.c_str());
 }
