@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cstring>
 #include <vector>
-#define start int main() {
+#define start int main(int argc, char* argv[]) {
 #define end }
 #define exitwith return
 #pragma once
