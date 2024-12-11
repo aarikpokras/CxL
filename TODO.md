@@ -9,7 +9,7 @@
   - [x] Update docs
 - [x] ARGV array
 - [x] Subscript operator for `strarr`
-- [ ] `write_file` function
-- [ ] Tutorials in docs!
+- [x] `write_file` function
+- [x] Tutorials in docs!
 - [ ] Unify printing with `cout`
 - [ ] Install/prep script
