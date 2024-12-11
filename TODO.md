@@ -8,7 +8,7 @@
 - [x] Prefix, not postfix incrementation
   - [x] Update docs
 - [x] ARGV array
-- [ ] Subscript operator for `strarr`!!
+- [x] Subscript operator for `strarr`
 - [ ] `write_file` function
 - [ ] Tutorials in docs!
 - [ ] Unify printing with `cout`
