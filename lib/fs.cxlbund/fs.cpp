@@ -17,3 +17,13 @@ vector<string> read_file(string file) {
     f_end.close();
     return ret_vec;
 }
+
+int write_file(string file, string content) {
+  ofstream f_end(file);
+  if (!f_end.is_open()) {
+    return 1;
+  }
+  f_end << content;
+  f_end.close();
+  return 0;
+}
