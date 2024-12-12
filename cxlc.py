@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import subprocess as s
+# import subprocess as s
 import os
 import sys
 import re
