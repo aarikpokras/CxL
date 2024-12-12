@@ -2,6 +2,7 @@
 #include <cstring>
 #include <vector>
 #define start int main(int argc, char* argv[]) {
+#define begin {
 #define end }
 #define argit for (int i = 0; i < argc; i++)
 #define exitwith return
@@ -151,6 +152,9 @@ struct strarr {
       rets += delim;
     }
     return rets.erase(rets.size()-1, rets.size());
+  }
+  void append(std::string what) {
+    c.push_back(what);
   }
   str operator[](const num<int>& o) {
     std::string ret_ = c[o.c];
