@@ -153,8 +153,9 @@ struct strarr {
     }
     return rets.erase(rets.size()-1, rets.size());
   }
-  void append(std::string what) {
-    c.push_back(what);
+  void append(str what) {
+    str whatf = str(what);
+    c.push_back(whatf.c[0]);
   }
   str operator[](const num<int>& o) {
     std::string ret_ = c[o.c];
