@@ -5,4 +5,4 @@ darwin:
 linux:
   - '(linux|Linux)'
 waiting-for-review:
-  - '(**)'
+  - '/.*/'
