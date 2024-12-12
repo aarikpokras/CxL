@@ -1,0 +1,10 @@
+[flake8]
+ignore = 
+         E111,
+         # Indent is not a multiple of four
+         E302,
+         # 2 blank lines rule
+         E121
+         # Wrong hanging indent
+
+max-line-length = 115
