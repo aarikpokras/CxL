@@ -23,8 +23,9 @@ jobs:
         cp examples/readfile.cxl PYENV
         cp -r lib PYENV
         cp cxlc.py PYENV
-        cd PYENV
     - name: Compile with cxlc
-      run: python3 cxlc.py readfile.cxl
+      run: |
+        cd PYENV
+        python3 cxlc.py readfile.cxl
     - name: Finalize
       run: python3 cxlc.py --moo
