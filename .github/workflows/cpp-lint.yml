@@ -1,0 +1,22 @@
+name: "C++ Lint"
+
+on:
+  push:
+    branches: [ "master" ]
+    paths:
+      - ".github/workflows/**"
+      - "lib/**"
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  lint:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Install cpplint
+      run: pip install cpplint
+    - uses: actions/checkout@v4
+    - name: Lint with cpplint
+      run: cpplint lib/*/*
