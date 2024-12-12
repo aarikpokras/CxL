@@ -11,4 +11,5 @@
 - [x] Subscript operator for `strarr`
 - [x] `write_file` function
 - [x] Tutorials in docs!
+- [ ] CI Linting
 - [ ] Install/prep script
