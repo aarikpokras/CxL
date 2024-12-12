@@ -46,7 +46,7 @@ compre = "g++ -x c++ "
 whatf = []
 
 for i in str_w:
-  if (i.startswith("use")):        
+  if (i.startswith("use")):
     module = i.replace("use@", "")
     whatf.append(module.strip())
 
@@ -76,7 +76,7 @@ incs_raw = []
 with open(argv[1], 'r') as f:
   w_ph = f.readlines()
   for i in w_ph:
-    if (i.startswith("#include")): # io.cxlbund/io.h
+    if (i.startswith("#include")):
       inc_ = i.replace("#include \"", "").replace("\"", "")
       inc = re.sub(".cxlbund.*", "", inc_)
       includes.append("use@" + inc)
