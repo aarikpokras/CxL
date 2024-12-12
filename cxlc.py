@@ -3,16 +3,29 @@ import subprocess as s
 import os
 import sys
 import re
+import random
 
 argv = sys.argv
+
+if (len(argv) == 1):
+  print(argv[0] + ": \033[1;37mError:\033[1;31m No input file passed\033[0m")
+  sys.exit(1)
 
 filename = re.sub("\\..*", "", argv[1])
 
 code = []
 tp_file = []
 
-with open(argv[1], 'r') as f:
-  str_w = f.readlines()
+if (argv[1] != "--moo"):
+  with open(argv[1], 'r') as f:
+    str_w = f.readlines()
+else:
+  with open('lib/cow/config.txt', 'r') as f:
+    jokes = f.readlines()
+    item = random.choice(jokes)
+    print(item)
+    print("        \\   ^__^\n         \\  (oo)\\_______\n            (__)\\       )N\n                ||----w |\n                ||     ||\n")
+    sys.exit(0)
 
 for i in str_w:
   if (i.startswith("use")):
