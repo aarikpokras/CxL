@@ -1,0 +1,8 @@
+windows:
+  - '(windows|Windows)'
+darwin:
+  - '(macos|darwin|macOS|Darwin)'
+linux:
+  - '(linux|Linux)'
+waiting-for-review:
+  - '(**)'
