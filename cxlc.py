@@ -21,8 +21,8 @@ if (argv[1] != "--moo"):
     str_w = f.readlines()
 else:
   with open('lib/cow/config.txt', 'r') as f:
-    jokes = f.readlines()
-    item = random.choice(jokes)
+    ch = f.readlines()
+    item = random.choice(ch)
     print(item)
     print("        \\   ^__^\n         \\  (oo)\\_______\n            (__)\\       )N\n                ||----w |\n                ||     ||\n")
     sys.exit(0)
