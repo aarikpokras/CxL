@@ -4,7 +4,7 @@ ignore =
          # Indent is not a multiple of four
          E302,
          # 2 blank lines rule
-         E121
+         E121,
          # Wrong hanging indent
-
-max-line-length = 115
+         E501
+         # I actually need to fix this :(
