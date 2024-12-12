@@ -3,6 +3,7 @@
 #include <vector>
 #define start int main(int argc, char* argv[]) {
 #define end }
+#define argit for (int i = 0; i < argc; i++)
 #define exitwith return
 #pragma once
 void print(std::string s);
