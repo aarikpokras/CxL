@@ -17,6 +17,5 @@ jobs:
     - uses: actions/checkout@v4
     - name: Lint with flake8
       run: flake8 ./cxlc.py
-      continue-on-error: true
     - name: Finalize
       run: python3 cxlc.py --moo
