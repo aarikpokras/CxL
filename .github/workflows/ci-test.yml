@@ -20,9 +20,9 @@ jobs:
     - name: Prepare
       run: |
         mkdir PYENV
-        cp examples/readfile.cxl PYENV
-        cp -r lib PYENV
-        cp cxlc.py PYENV
+        cp examples/readfile.cxl PYENV/
+        cp -r lib PYENV/
+        cp cxlc.py PYENV/
     - name: Compile with cxlc
       run: |
         cd PYENV
