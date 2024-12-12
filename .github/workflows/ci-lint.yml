@@ -3,6 +3,9 @@ name: Lint
 on:
   push:
     branches: [ "master" ]
+    paths:
+      - "lib/**"
+      - "cxlc.py"
   pull_request:
     branches: [ "master" ]
 
