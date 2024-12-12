@@ -1,0 +1,46 @@
+name: Bug report
+description: Report something that went wrong
+title: "[Brief description of bug]"
+labels: bug
+assignees: aarikpokras
+
+body:
+ - type: input
+   attributes:
+     label: Version
+     description: What version of CxL are you using? You can use tag names or commit numbers.
+   validations:
+     required: true
+ - type: input
+   attributes:
+     label: OS
+     description: The operating system you are using (Windows, Darwin, Linux, etc.)
+   validations:
+     required: true
+ - type: textarea
+   attributes:
+     label: Code
+     description: Paste the code you wrote here.
+   validations:
+     required: true
+ - type: textarea
+   attributes:
+     label: Expected behavior
+     description: What was supposed to happen
+   validations:
+     required: true
+ - type: textarea
+   attributes:
+     label: Error
+     description: Paste the error here.
+   validations:
+     required: true
+ - type: textarea
+   attributes:
+     label: Screenshots
+     description: Are there screenshots that show the bug?
+   validations:
+     required: false
+ - type: markdown
+   attributes:
+     value: Thank you!
