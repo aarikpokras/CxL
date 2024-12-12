@@ -1,0 +1,25 @@
+name: Test
+
+on:
+  push:
+    branches: [ "master" ]
+    paths:
+      - ".github/workflows/**"
+      - "lib/**"
+      - "cxlc.py"
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  compiler:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Prepare
+      run: mv examples/readfile.cxl .
+    - name: Compile with cxlc
+      run: python3 cxlc.py readfile.cxl
+    - name: Finalize
+      run: python3 cxlc.py --moo
