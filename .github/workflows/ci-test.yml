@@ -18,7 +18,12 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Prepare
-      run: mv examples/readfile.cxl .
+      run: |
+        mkdir PYENV
+        cp examples/readfile.cxl PYENV
+        cp -r lib PYENV
+        cp cxlc.py PYENV
+        cd PYENV
     - name: Compile with cxlc
       run: python3 cxlc.py readfile.cxl
     - name: Finalize
