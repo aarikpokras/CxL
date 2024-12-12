@@ -4,7 +4,7 @@ on:
   push:
     branches: [ "master" ]
     paths:
-      - "lib/**"
+      - ".github/workflows/**"
       - "cxlc.py"
   pull_request:
     branches: [ "master" ]
