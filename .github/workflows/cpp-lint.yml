@@ -6,6 +6,7 @@ on:
     paths:
       - ".github/workflows/**"
       - "lib/**"
+      - "CPPLINT.cfg"
   pull_request:
     branches: [ "master" ]
 
