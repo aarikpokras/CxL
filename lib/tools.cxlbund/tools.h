@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 #include <vector>
 #pragma once
 std::string remins(std::string subject, std::string what, int times);
