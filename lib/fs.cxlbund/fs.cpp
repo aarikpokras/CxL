@@ -12,7 +12,7 @@ vector<string> read_file(string file) {
         return ret_vec;
     }
     string ln;
-    while(getline(f_end, ln)) {
+    while (getline(f_end, ln)) {
         ret_vec.push_back(ln);
     }
     f_end.close();
