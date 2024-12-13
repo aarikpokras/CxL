@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstring>
+#include <string>
 #include <vector>
 #define start int main(int argc, char* argv[]) {
 #define begin {
@@ -116,7 +117,7 @@ struct str {
 
     ret[0] = l.c[0].c_str();
     ret[1] = r.c[0].c_str();
-    std::string ret_f = ret[0] + ret[1]; // Take advantage of std::string's concat.
+    std::string ret_f = ret[0] + ret[1];  // Take advantage of std::string's concat.
     return str(ret_f);  // This uses the std::string constructor
   }
   void operator+=(const str& o) {
@@ -143,7 +144,7 @@ str chomp(str what);
 str read();
 
 struct strarr {
-  std::vector<std::string> c;  
+  std::vector<std::string> c;
   strarr(std::vector<std::string> w) : c(w) {}
   std::string join(std::string delim) {
     std::string rets;
