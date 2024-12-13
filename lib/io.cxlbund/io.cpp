@@ -1,4 +1,6 @@
 #include <iostream>
+#include <string>
+#include <cstdio>
 #include "io.h"
 using namespace std;
 
