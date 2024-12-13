@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
+#include "fs.h"
 using namespace std;
 
 vector<string> read_file(string file) {
