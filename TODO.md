@@ -12,5 +12,7 @@
 - [x] `write_file` function
 - [x] Tutorials in docs!
 - [ ] Shell interaction
+  - [ ] Error code only
+  - [ ] Run results only
 - [ ] CI Linting
 - [ ] Install/prep script
