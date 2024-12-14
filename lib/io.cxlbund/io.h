@@ -117,7 +117,8 @@ struct str {
 
     ret[0] = l.c[0].c_str();
     ret[1] = r.c[0].c_str();
-    std::string ret_f = ret[0] + ret[1];  // Take advantage of std::string's concat.
+    // Take advantage of std::string's concat.
+    std::string ret_f = ret[0] + ret[1];
     return str(ret_f);  // This uses the std::string constructor
   }
   void operator+=(const str& o) {
