@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Documentation
+    url: https://github.com/aarikpokras/CxL/wiki/
+    about: Information in case you're stuck.
+  - name: README
+    url: https://github.com/aarikpokras/CxL/blob/master/README.md
+    about: Some basic information
