@@ -65,6 +65,9 @@ os.system(compre + " -std=c++17")
 
 """
 change back
+A philosophical question: Is the shell lib really being
+compiled as C? Am I just cheating so I can say I used C?
+Maybe... I did use -x cpp, so it probably is.
 """
 
 includes = []
