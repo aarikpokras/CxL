@@ -14,5 +14,6 @@
 - [ ] Shell interaction
   - [ ] Error code only
   - [ ] Run results only
+  - [x] Both
 - [ ] CI Linting
 - [ ] Install/prep script
