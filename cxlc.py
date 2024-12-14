@@ -55,7 +55,7 @@ move
 
 for i in whatf:
   os.system("cp -r lib/" + i + ".cxlbund .")
-  compre += i + ".cxlbund/" + i + ".cpp "
+  compre += i + ".cxlbund/" + i + ".c* "
 
 compre += argv[1] + " -o " + filename
 
