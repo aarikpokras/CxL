@@ -6,6 +6,8 @@ import random
 
 argv = sys.argv
 
+libd = os.environ['HOME'] + "/cxl"
+
 if (len(argv) == 1):
   print(argv[0] + ": \033[1;37mError:\033[1;31m No input file passed\033[0m")
   sys.exit(1)
@@ -19,7 +21,7 @@ if (argv[1] != "--moo"):
   with open(argv[1], 'r') as f:
     str_w = f.readlines()
 else:
-  with open('lib/cow/config.txt', 'r') as f:
+  with open(libd + '/lib/cow/config.txt', 'r') as f:
     ch = f.readlines()
     item = random.choice(ch)
     print(item)
@@ -54,7 +56,7 @@ move
 """
 
 for i in whatf:
-  os.system("cp -r lib/" + i + ".cxlbund .")
+  os.system("cp -r " + libd + "/lib/" + i + ".cxlbund .")
   compre += i + ".cxlbund/" + i + ".c* "
 
 compre += argv[1] + " -o " + filename
