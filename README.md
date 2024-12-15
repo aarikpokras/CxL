@@ -5,6 +5,7 @@
   The CxL Programming Language
 </div>
 
+### Important security fixes were introduced in v2.7.2!
 
 CxL adds on to the existing features of C++, making it more beginner-friendly and making compiled languages less daunting. It focuses on being compact, fast, and straightforward. It aims to be the "go-to" language that people use when they want to write a program.
 
