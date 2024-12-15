@@ -13,10 +13,16 @@ Clone the repository:
 ```
 git clone https://github.com/aarikpokras/CxL
 ```
+
+### For Linux, macOS and UNIX systems:
 Enter the directory and run
 ```
 sh configure.sh
 ```
+
+### For Windows:
+Keep `lib` and `cxlc.py` in your directory when compiling CxL programs.
+
 It should be set up!\
 Next, see [Your first CxL program](https://github.com/aarikpokras/CxL/wiki/Tutorials#your-first-cxl-program).
 
