@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "fs.h"
 
 int file_size(const char* file) {
   FILE *f = fopen(file, "r");
