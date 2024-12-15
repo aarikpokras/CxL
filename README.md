@@ -8,6 +8,17 @@
 
 CxL adds on to the existing features of C++, making it more beginner-friendly and making compiled languages less daunting. It focuses on being compact, fast, and straightforward. It aims to be the "go-to" language that people use when they want to write a program.
 
+## Setting up
+Clone the repository:
+```
+git clone https://github.com/aarikpokras/CxL
+```
+Enter the directory and run
+```
+sh configure.sh
+```
+It should be set up!
+
 ## Data types
 See [using data](https://github.com/aarikpokras/CxL/wiki/Data#using-data) for more.
 
