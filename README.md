@@ -17,7 +17,8 @@ Enter the directory and run
 ```
 sh configure.sh
 ```
-It should be set up!
+It should be set up!\
+Next, see [Your first CxL program](https://github.com/aarikpokras/CxL/wiki/Tutorials#your-first-cxl-program).
 
 ## Data types
 See [using data](https://github.com/aarikpokras/CxL/wiki/Data#using-data) for more.
