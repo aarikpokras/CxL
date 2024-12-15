@@ -36,3 +36,5 @@ See [using data](https://github.com/aarikpokras/CxL/wiki/Data#using-data) for mo
 |`str`|A string of characters|`char` arrays or `std::string`|
 |`num`|A number|`double`, `float`, and `int`, all in one.|
 |`strarr`|An array of `str`s|`string` arrays|
+
+<!-- I've only been working on this for ten days 😭 -->
