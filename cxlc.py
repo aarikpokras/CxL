@@ -67,9 +67,6 @@ os.system(compre + " -std=c++17")
 
 """
 change back
-A philosophical question: Is the shell lib really being
-compiled as C? Am I just cheating so I can say I used C?
-Maybe... I did use -x cpp, so it probably is.
 """
 
 includes = []
@@ -99,4 +96,5 @@ destroy local cxlbunds
 """
 
 for i in incs_raw:
+  os.system("chmod -R +w " + i + ".cxlbund")
   os.system("rm -r " + i + ".cxlbund")
