@@ -14,5 +14,12 @@ int move_file(const char* origin, const char* destination) {
   sleep(1);
   char buf[256];
   snprintf(buf, 256, "mv \"%s\" \"%s\"", origin, destination);
+  for (int i = 0; i < sizeof(buf); i++) {
+    if (buf[i] == ';' || buf[i] == '&' || buf[i] == '"') {
+      // Nice try, bad guy.
+      printf("%s\n", "CxL RT35: Could not move file.");
+      return 35;
+    }
+  }
   return system(buf);
 }
