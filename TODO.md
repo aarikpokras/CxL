@@ -11,9 +11,7 @@
 - [x] Subscript operator for `strarr`
 - [x] `write_file` function
 - [x] Tutorials in docs!
-- [ ] Shell interaction
-  - [ ] Error code only
-  - [ ] Run results only
-  - [x] Both
-- [ ] CI Linting
-- [ ] Install/prep script
+- [x] Shell interaction
+- [x] CI Linting
+- [x] Install/prep script
+- [ ] More deal-with-able G++ messages
