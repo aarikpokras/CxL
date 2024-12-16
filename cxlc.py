@@ -42,7 +42,7 @@ with open(argv[1], 'w') as f:
   for i in code:
     f.write(i)
 
-compre = "g++ -x c++ "
+compre = "g++ "
 
 whatf = []
 
@@ -57,9 +57,9 @@ move
 
 for i in whatf:
   os.system("cp -r " + libd + "/lib/" + i + ".cxlbund .")
-  compre += i + ".cxlbund/" + i + ".c* "
+  compre += "-x c++ " + i + ".cxlbund/" + i + ".c* "
 
-compre += argv[1] + " -o " + filename
+compre += "-x c++ " + argv[1] + " -o " + filename
 
 print(compre)
 
