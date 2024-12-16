@@ -6,7 +6,6 @@
 #define begin {
 #define end }
 #define argit for (int i = 0; i < argc; i++)
-#define loop(x) for (int i = 0; i < x; i++)
 #define exitwith return
 #pragma once
 void print(std::string s);
@@ -91,6 +90,8 @@ struct num {
     }
   }
 };
+
+#define loop(x) for (num i = 0; i < x; i++)
 
 template <typename T>
 void printi(num<T> i) {
