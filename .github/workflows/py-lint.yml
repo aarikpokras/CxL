@@ -22,3 +22,4 @@ jobs:
       run: flake8 ./cxlc.py
     - name: Finalize
       run: python3 cxlc.py --moo
+      continue-on-error: true
