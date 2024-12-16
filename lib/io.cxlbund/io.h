@@ -162,6 +162,11 @@ struct strarr {
     str whatf = str(what);
     c.push_back(whatf.c[0]);
   }
+  num<int> items() {
+    std::string ret__ = std::to_string(c.size());
+    int ret_ = std::stoi(ret__);
+    return num(ret_);
+  }
   str operator[](const num<int>& o) {
     std::string ret_ = c[o.c];
     return str(ret_);
