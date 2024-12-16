@@ -4,6 +4,12 @@
 #include "io.h"
 using namespace std;
 
+void loop(void (*what)(void), num<int> times) {
+  for (num i = 0; i < times; i++) {
+    what();
+  }
+}
+
 str read() {
   string out_;
   getline(cin, out_);
