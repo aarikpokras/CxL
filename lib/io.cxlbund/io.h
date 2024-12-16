@@ -91,7 +91,7 @@ struct num {
   }
 };
 
-#define loop(x) for (num i = 0; i < x; i++)
+void loop(void (*what)(void), num<int> times);
 
 template <typename T>
 void printi(num<T> i) {
@@ -121,7 +121,8 @@ struct str {
     ret[1] = r.c[0].c_str();
     // Take advantage of std::string's concat.
     std::string ret_f = ret[0] + ret[1];
-    return str(ret_f);  // This uses the std::string constructor
+    // This uses the std::string constructor
+    return str(ret_f);
   }
   void operator+=(const str& o) {
     c[0] += o.c[0];
