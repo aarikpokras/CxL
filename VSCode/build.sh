@@ -1,0 +1,3 @@
+echo Building...
+vsce package --allow-missing-repository
+echo Done!
