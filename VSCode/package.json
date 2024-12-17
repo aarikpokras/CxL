@@ -2,7 +2,7 @@
   "name": "cxl",
   "displayName": "CxL Language Support",
   "description": "VSCode language support for CxL",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.96.0"
   },
