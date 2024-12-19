@@ -14,4 +14,5 @@
 - [x] Shell interaction
 - [x] CI Linting
 - [x] Install/prep script
+- [ ] More math functions (average, etc.)
 - [ ] More deal-with-able G++ messages
