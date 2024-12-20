@@ -141,6 +141,9 @@ struct str {
       return false;
     }
   }
+  operator std::string() {
+    return c[0];
+  }
 };
 
 void prints(str s);
