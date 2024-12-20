@@ -8,7 +8,7 @@
 <!--### Important security fixes were introduced in v2.7.2!
 * Version 2.7.1 is affected by a serious security issue. Please update ASAP.-->
 
-CxL adds on to the existing features of C++, making it more beginner-friendly and making compiled languages less daunting. It focuses on being compact, fast, and straightforward. It aims to be the "go-to" language that people use when they want to write a program.
+CxL is a general-purpose programming language for UNIX systems based on C++. It is more beginner-friendly and makes compiled languages less daunting. It focuses on being compact, fast, and straightforward. It aims to be the "go-to" language that people use when they want to write a program.
 
 ## Setting up
 Clone the repository:
