@@ -28,3 +28,11 @@ vector<string> split(string subject, string delim, int times) {
     }
     return ret;
 }
+
+string reverse(string subject) {
+  string ret_(subject.size(), ' ');
+  for (int i = subject.size() - 1; i >= 0; i--) {
+    ret_[subject.size() - 1 - i] = subject[i];
+  }
+  return ret_;
+}
