@@ -15,4 +15,5 @@
 - [x] CI Linting
 - [x] Install/prep script
 - [ ] `any` type?
+  - [ ] Have it support string literals
 - [ ] More deal-with-able G++ messages
