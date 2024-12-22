@@ -1,4 +1,5 @@
 #include <iostream>
+#include <variant>
 #include <cstring>
 #include <string>
 #include <vector>
@@ -89,6 +90,12 @@ struct num {
       return false;
     }
   }
+  operator int() {
+    return c;
+  }
+  operator float() {
+    return c;
+  }
 };
 
 void loop(void (*what)(void), num<int> times);
@@ -143,6 +150,32 @@ struct str {
   }
   operator std::string() {
     return c[0];
+  }
+};
+
+struct any {
+  std::variant<num<double>, num<int>, str, int, double> c;
+  any(str w) : c(w) {}
+  any(num<double> w) : c(w) {}
+  any(num<int> w) : c(w) {}
+  any(int w) : c(w) {}
+  any(double w) : c(w) {}
+  bool is_num() {
+    if (std::holds_alternative<num<double>>(c)
+    || std::holds_alternative<num<int>>(c)
+    || std::holds_alternative<int>(c)
+    || std::holds_alternative<double>(c)) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+  bool is_str() {
+    if (std::holds_alternative<str>(c)) {
+      return true;
+    } else {
+      return false;
+    }
   }
 };
 
