@@ -11,10 +11,9 @@
 #pragma once
 void print(std::string s);
 
-template <typename T>
 struct num {
-  T c;
-  num(T w) : c(w) {}
+  double c;
+  num(double w) : c(w) {}
   std::string as_str() {
     return std::to_string(c);
   }
@@ -98,12 +97,9 @@ struct num {
   }
 };
 
-void loop(void (*what)(void), num<int> times);
+void loop(void (*what)(void), num times);
 
-template <typename T>
-void printi(num<T> i) {
-  std::cout << i.c;
-}
+void printi(num i);
 
 struct str {
   std::vector<std::string> c;
@@ -154,15 +150,18 @@ struct str {
 };
 
 struct any {
-  std::variant<num<double>, num<int>, str, int, double> c;
-  any(str w) : c(w) {}
-  any(num<double> w) : c(w) {}
-  any(num<int> w) : c(w) {}
-  any(int w) : c(w) {}
-  any(double w) : c(w) {}
+  std::variant<num, str, int, double> c;
+  str s = "";
+  num ni = 0;
+  double d = 0;
+  int i = 0;
+  any(str w) : c(w), s(w) {}
+  any(num w) : c(w), ni(w) {}
+  any(int w) : c(w), i(w) {}
+  any(double w) : c(w), d(w) {}
+  
   bool is_num() {
-    if (std::holds_alternative<num<double>>(c)
-    || std::holds_alternative<num<int>>(c)
+    if (std::holds_alternative<num>(c)
     || std::holds_alternative<int>(c)
     || std::holds_alternative<double>(c)) {
       return true;
@@ -198,12 +197,12 @@ struct strarr {
     str whatf = str(what);
     c.push_back(whatf.c[0]);
   }
-  num<int> items() {
+  num items() {
     std::string ret__ = std::to_string(c.size());
     int ret_ = std::stoi(ret__);
     return num(ret_);
   }
-  str operator[](const num<int>& o) {
+  str operator[](const num& o) {
     std::string ret_ = c[o.c];
     return str(ret_);
   }
