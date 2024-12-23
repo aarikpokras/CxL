@@ -4,10 +4,14 @@
 #include "io.h"
 using namespace std;
 
-void loop(void (*what)(void), num<int> times) {
+void loop(void (*what)(void), num times) {
   for (num i = 0; i < times; i++) {
     what();
   }
+}
+
+void printi(num i) {
+  std::cout << i.c;
 }
 
 str read() {
