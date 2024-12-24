@@ -5,6 +5,9 @@
   The CxL Programming Language
 </div>
 
+![MIT License](https://img.shields.io/github/license/aarikpokras/CxL?style=for-the-badge)
+![Code Size](https://img.shields.io/github/languages/code-size/aarikpokras/CxL?style=for-the-badge)
+
 <!--### Important security fixes were introduced in v2.7.2!
 * Version 2.7.1 is affected by a serious security issue. Please update ASAP.-->
 
