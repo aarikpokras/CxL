@@ -17,28 +17,28 @@ struct num {
   std::string as_str() {
     return std::to_string(c);
   }
-  num operator+(const num& o) {
-    return c + o.c;
+  num operator+(const int& o) {
+    return c + o;
   }
-  num operator-(const num& o) {
+  num operator-(const int& o) {
     return c - o.c;
   }
-  num operator*(const num& o) {
+  num operator*(const int& o) {
     return c * o.c;
   }
-  num operator/(const num& o) {
+  num operator/(const int& o) {
     return c / o.c;
   }
-  void operator+=(const num& o) {
+  void operator+=(const int& o) {
     c += o.c;
   }
-  void operator-=(const num& o) {
+  void operator-=(const int& o) {
     c -= o.c;
   }
-  void operator*=(const num& o) {
+  void operator*=(const int& o) {
     c *= o.c;
   }
-  void operator/=(const num& o) {
+  void operator/=(const int& o) {
     c /= o.c;
   }
   void operator++(int) {
@@ -47,42 +47,42 @@ struct num {
   void operator--(int) {
     c--;
   }
-  bool operator==(const num& o) {
+  bool operator==(const int& o) {
     if (c == o.c) {
       return true;
     } else {
       return false;
     }
   }
-  bool operator!=(const num& o) {
+  bool operator!=(const int& o) {
     if (c != o.c) {
       return true;
     } else {
       return false;
     }
   }
-  bool operator>(const num& o) {
+  bool operator>(const int& o) {
     if (c > o.c) {
       return true;
     } else {
       return false;
     }
   }
-  bool operator<(const num& o) {
+  bool operator<(const int& o) {
     if (c < o.c) {
       return true;
     } else {
       return false;
     }
   }
-  bool operator>=(const num& o) {
+  bool operator>=(const int& o) {
     if (c >= o.c) {
       return true;
     } else {
       return false;
     }
   }
-  bool operator<=(const num& o) {
+  bool operator<=(const int& o) {
     if (c <= o.c) {
       return true;
     } else {
@@ -90,9 +90,6 @@ struct num {
     }
   }
   operator int() {
-    return c;
-  }
-  operator float() {
     return c;
   }
 };
