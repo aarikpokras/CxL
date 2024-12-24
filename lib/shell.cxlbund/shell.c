@@ -9,7 +9,8 @@ int execute(const char *command) {
 
 int move_file(const char* origin, const char* destination) {
   char warn[512];
-  snprintf(warn, 512, "This program is trying to change file %s. Use ^C now if you wish to stop this.", origin);
+  snprintf(warn, 512, "This program is trying to change file %s."
+                      "Use ^C now if you wish to stop this.", origin);
   printf("%s\n", warn);
   sleep(1);
   char buf[256];
