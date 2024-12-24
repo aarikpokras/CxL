@@ -291,7 +291,7 @@ struct any {
   any(num w) : c(w), ni(w) {}
   any(int w) : c(w), i(w) {}
   any(double w) : c(w), d(w) {}
-  
+
   bool is_num() {
     if (std::holds_alternative<num>(c)
     || std::holds_alternative<int>(c)
