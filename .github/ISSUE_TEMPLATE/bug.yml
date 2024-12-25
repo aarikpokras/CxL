@@ -32,9 +32,9 @@ body:
  - type: textarea
    attributes:
      label: Error
-     description: Paste the error here.
+     description: If there was some sort of error, paste it here.
    validations:
-     required: true
+     required: false
  - type: textarea
    attributes:
      label: Screenshots
