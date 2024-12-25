@@ -14,8 +14,8 @@
 - [x] Shell interaction
 - [x] CI Linting
 - [x] Install/prep script
-## - [ ] FIX `NUM` FUNCTION ISSUE!!
-  - [ ] Constructors, not templates!
-- [ ] `any` type?
+- [x] Fix `num` function issue!! (No template deduction in function prototype)
+  - [x] Constructors, not templates!
+- [x] `any` type?
   - [ ] Have it support string literals
 - [ ] More deal-with-able G++ messages
