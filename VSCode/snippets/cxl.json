@@ -1,0 +1,23 @@
+{
+     "Loop": {
+       "prefix": "loop",
+       "body": [
+        "void ${1:loop_function}() begin",
+        "  ${2:print(\"Hello!\\n\");}",
+        "end"
+       ],
+       "description": "Create a loop!"
+     },
+     "Function": {
+       "prefix": "function",
+       "body": [
+        "${1:return_type} ${2:functionName}() begin",
+        "  prints(\"Name: \");",
+        "  ${1:return_type} name = read();",
+        "  exitwith name;",
+        "end"
+       ],
+       "description": "Define a function!"
+     }
+   }
+   
