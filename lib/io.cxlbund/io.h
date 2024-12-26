@@ -282,16 +282,12 @@ struct str {
 };
 
 struct any {
-  std::variant<num, str, int, double> c;
-  str s = "";
-  num ni = 0;
-  double d = 0;
-  int i = 0;
-  any(str w) : c(w), s(w) {}
-  any(num w) : c(w), ni(w) {}
-  any(int w) : c(w), i(w) {}
-  any(double w) : c(w), d(w) {}
-
+  std::variant<num, str, const char*, int, double> c;
+  any(str w) : c(w) {}
+  any(num w) : c(w) {}
+  any(int w) : c(w) {}
+  any(double w) : c(w) {}
+  any(const char* w) : c(w) {}
   bool is_num() {
     if (std::holds_alternative<num>(c)
     || std::holds_alternative<int>(c)
@@ -302,7 +298,8 @@ struct any {
     }
   }
   bool is_str() {
-    if (std::holds_alternative<str>(c)) {
+    if (std::holds_alternative<str>(c)
+    || std::holds_alternative<const char*>(c)) {
       return true;
     } else {
       return false;
