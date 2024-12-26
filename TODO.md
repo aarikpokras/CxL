@@ -17,5 +17,6 @@
 - [x] Fix `num` function issue!! (No template deduction in function prototype)
   - [x] Constructors, not templates!
 - [x] `any` type?
-  - [ ] Have it support string literals
+  - [x] Have it support string literals
 - [ ] More deal-with-able G++ messages
+- [ ] Windows configure script
