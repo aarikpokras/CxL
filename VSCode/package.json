@@ -20,6 +20,13 @@
       "language": "cxl",
       "scopeName": "source.cxl",
       "path": "./syntaxes/cxl.tmLanguage.json"
-    }]
+    }],
+
+    "snippets": [
+      {
+        "language": "cxl",
+        "path": "./snippets/cxl.json"
+      }
+    ]
   }
 }
