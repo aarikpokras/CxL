@@ -13,7 +13,7 @@
        "body": [
         "${1:return_type} ${2:functionName}() begin",
         "  prints(\"Name: \");",
-        "  ${1:return_type} name = read();",
+        "  str name = read();",
         "  exitwith name;",
         "end"
        ],
