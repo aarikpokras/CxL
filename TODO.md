@@ -18,6 +18,6 @@
   - [x] Constructors, not templates!
 - [x] `any` type?
   - [x] Have it support string literals
-- [ ] Way to get value from `any`
+- [x] Way to get value from `any`
 - [ ] More deal-with-able G++ messages
 - [ ] Windows configure script
