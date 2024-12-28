@@ -305,6 +305,28 @@ struct any {
       return false;
     }
   }
+  num num_value() {
+    if (std::holds_alternative<num>(c)) {
+      return std::get<num>(c);
+    } else if (std::holds_alternative<int>(c)) {
+      return std::get<int>(c);
+    } else if (std::holds_alternative<double>(c)) {
+      return std::get<double>(c);
+    }
+    std::cout << "CxL RT21: Bad type." << std::endl;
+    std::cout << "Traceback F" << __FILE__ << " L" << __LINE__ << std::endl;
+    return 21;
+  }
+  str str_value() {
+    if (std::holds_alternative<str>(c)) {
+      return std::get<str>(c);
+    } else if (std::holds_alternative<const char*>(c)) {
+      return std::string(std::get<const char*>(c));
+    }
+    std::cout << "CxL RT21: Bad type." << std::endl;
+    std::cout << "Traceback F" << __FILE__ << " L" << __LINE__ << std::endl;
+    return str("RT21");
+  }
 };
 
 void prints(str s);
