@@ -18,7 +18,6 @@
   - [x] Constructors, not templates!
 - [x] `any` type?
   - [x] Have it support string literals
-- [ ] `double`, `int`, and `num` handling for all other operators!
 - [ ] Way to get value from `any`
 - [ ] More deal-with-able G++ messages
 - [ ] Windows configure script
