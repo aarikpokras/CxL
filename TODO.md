@@ -19,5 +19,6 @@
 - [x] `any` type?
   - [x] Have it support string literals
 - [x] Way to get value from `any`
+- [ ] Way to convert `str` to `num` or `num` `read` (`readi`) function
 - [ ] More deal-with-able G++ messages
 - [ ] Windows configure script
