@@ -8,10 +8,10 @@
 ![MIT License](https://img.shields.io/github/license/aarikpokras/CxL?style=for-the-badge)
 ![Code Size](https://img.shields.io/github/languages/code-size/aarikpokras/CxL?style=for-the-badge)
 
-<!--### Important security fixes were introduced in v2.7.2!
-* Version 2.7.1 is affected by a serious security issue. Please update ASAP.-->
+<!--### Important security fixes were introduced in vX.X.X!
+* Version X.X.X is affected by a serious security issue. Please update ASAP.-->
 
-CxL is a general-purpose programming language for UNIX systems based on C++. It is more beginner-friendly and makes compiled languages less daunting. It focuses on being compact, fast, and straightforward. It aims to be the "go-to" language that people use when they want to write a program.
+CxL is a general-purpose programming language for UNIX systems and is based on C++. It is more beginner-friendly and makes compiled languages less daunting. It focuses on being compact, fast, and straightforward. It aims to be the "go-to" language that people use when they want to write a program.
 
 ## Setting up
 Clone the repository:
