@@ -20,5 +20,6 @@
   - [x] Have it support string literals
 - [x] Way to get value from `any`
 - [ ] Way to convert `str` to `num` or `num` `read` (`readi`) function
+- [ ] More snippets in `VSCode` directory
 - [ ] More deal-with-able G++ messages
 - [ ] Windows configure script
