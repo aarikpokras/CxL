@@ -26,7 +26,15 @@ sh configure.sh
 ```
 
 ### For Windows:
-Keep `lib` and `cxlc.py` in your directory when compiling CxL programs.
+Keep `lib` and `cxlc-win.py` in your directory when compiling CxL programs. You can rename cxlc-win.py to cxlc.py:
+#### In PowerShell:
+```pwsh
+Move-Item cxlc-win.py cxlc.py
+```
+#### In CMD:
+```cmd
+ren cxlc-win.py cxlc.py
+```
 
 It should be set up!\
 Next, see [Your first CxL program](https://github.com/aarikpokras/CxL/wiki/Tutorials#your-first-cxl-program).
