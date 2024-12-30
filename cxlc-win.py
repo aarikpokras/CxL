@@ -1,4 +1,8 @@
-#!/usr/bin/env python3
+"""
+This is a Windows compiler that, instead of using
+the lib directory that would be used on UNIX-shell
+-based systems, it uses the local one.
+"""
 import os
 import sys
 import re
