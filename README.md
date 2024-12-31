@@ -29,10 +29,12 @@ sh configure.sh
 Keep `lib` and `cxlc-win.py` in your directory when compiling CxL programs. You can rename cxlc-win.py to cxlc.py:
 #### In PowerShell:
 ```pwsh
+Remove-Item cxlc.py
 Move-Item cxlc-win.py cxlc.py
 ```
 #### In CMD:
 ```cmd
+del cxlc.py
 ren cxlc-win.py cxlc.py
 ```
 
