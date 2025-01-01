@@ -19,11 +19,12 @@
 - [x] `any` type?
   - [x] Have it support string literals
 - [x] Way to get value from `any`
-- [ ] `num` and `str` subscript operators
+- [x] `num` and `str` subscript operators
   - [x] `num`
     - [x] Docs
   - [x] `str`
     - [x] Docs
+- [ ] Out-of-bounds checking for `num` and `str` subscript operators
 - [ ] Way to convert `str` to `num` or `num` `read` (`readi`) function
 - [ ] Have runtime errors output to `cerr`
 - [ ] More snippets in `VSCode` directory
