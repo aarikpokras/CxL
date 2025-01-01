@@ -271,7 +271,12 @@ struct str {
     return str(ret_f);
   }
   str operator[](const int& o) {
-    return str(c[0][o]);
+    if (o >= c[0].size()) {
+      std::cerr << "CxL RT10: Out of bounds." << std::endl;
+      return str("RT10");
+    } else {
+      return str(c[0][o]);
+    }
   }
   void operator+=(const str& o) {
     c[0] += o.c[0];
