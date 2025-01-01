@@ -155,6 +155,12 @@ struct num {
       return false;
     }
   }
+  num operator[](const int& o) {
+    std::string ret__ = std::to_string(c);
+    std::string ret_ = std::string(1, ret__[o]);
+    double ret = std::stod(ret_);
+    return num(ret);
+  }
   num operator+(const num& o) {
     return num(c + o.c);
   }
