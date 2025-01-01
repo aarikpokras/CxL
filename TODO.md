@@ -20,6 +20,10 @@
   - [x] Have it support string literals
 - [x] Way to get value from `any`
 - [ ] `num` and `str` subscript operators
+  - [ ] `num`
+    - [ ] Docs
+  - [ ] `str`
+    - [ ] Docs
 - [ ] Way to convert `str` to `num` or `num` `read` (`readi`) function
 - [ ] More snippets in `VSCode` directory
 - [ ] More deal-with-able G++ messages
