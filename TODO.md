@@ -25,6 +25,7 @@
   - [x] `str`
     - [x] Docs
 - [ ] Way to convert `str` to `num` or `num` `read` (`readi`) function
+- [ ] Have runtime errors output to `cerr`
 - [ ] More snippets in `VSCode` directory
 - [ ] More deal-with-able G++ messages
 - [ ] Windows configure script
