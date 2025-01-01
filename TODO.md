@@ -20,7 +20,7 @@
   - [x] Have it support string literals
 - [x] Way to get value from `any`
 - [ ] `num` and `str` subscript operators
-  - [ ] `num`
+  - [x] `num`
     - [ ] Docs
   - [ ] `str`
     - [ ] Docs
