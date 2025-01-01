@@ -21,7 +21,7 @@
 - [x] Way to get value from `any`
 - [ ] `num` and `str` subscript operators
   - [x] `num`
-    - [ ] Docs
+    - [x] Docs
   - [ ] `str`
     - [ ] Docs
 - [ ] Way to convert `str` to `num` or `num` `read` (`readi`) function
