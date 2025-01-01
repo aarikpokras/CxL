@@ -244,6 +244,11 @@ struct str {
   str(const char* w) {
     c.push_back(w);
   }
+  str(char w) {
+    c.push_back(
+      std::string(1, w)
+    );
+  }
   str(std::string w) {  // Not for user -- this is for
     c.push_back(w);     // operator overloading, which
                         // passes elements of the vector as
@@ -264,6 +269,9 @@ struct str {
     std::string ret_f = ret[0] + ret[1];
     // This uses the std::string constructor
     return str(ret_f);
+  }
+  str operator[](const int& o) {
+    return str(c[0][o]);
   }
   void operator+=(const str& o) {
     c[0] += o.c[0];
