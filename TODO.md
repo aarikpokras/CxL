@@ -25,6 +25,8 @@
   - [x] `str`
     - [x] Docs
 - [ ] Out-of-bounds checking for `num` and `str` subscript operators
+  - [ ] `num`
+  - [x] `str`
 - [ ] Way to convert `str` to `num` or `num` `read` (`readi`) function
 - [ ] Have runtime errors output to `cerr`
 - [ ] More snippets in `VSCode` directory
