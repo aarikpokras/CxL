@@ -2,7 +2,7 @@
      "Loop": {
        "prefix": "loop",
        "body": [
-        "void ${1:loop_function}() begin",
+        "void ${1:function name}() begin",
         "  ${2:print(\"Hello!\\n\");}",
         "end"
        ],
@@ -11,7 +11,7 @@
      "Function": {
        "prefix": "function",
        "body": [
-        "${1:return_type} ${2:functionName}() begin",
+        "${1:return type} ${2:function name}() begin",
         "  prints(\"Name: \");",
         "  str name = read();",
         "  exitwith name;",
