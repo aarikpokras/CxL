@@ -22,8 +22,8 @@
 - [ ] `num` and `str` subscript operators
   - [x] `num`
     - [x] Docs
-  - [ ] `str`
-    - [ ] Docs
+  - [x] `str`
+    - [x] Docs
 - [ ] Way to convert `str` to `num` or `num` `read` (`readi`) function
 - [ ] More snippets in `VSCode` directory
 - [ ] More deal-with-able G++ messages
